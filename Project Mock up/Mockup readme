@@ -1,1 +1,9 @@
 Mockups PNG format uploaded.
+Possible data to be captured backend (DB schema):
+Table name: Profile [ID,NAME,ADDRESS,TEL,CITY,STATE,ZIP,CREDIT_SCORE,ACCT#,APT#,APT_TYPE,PHOTO(OPTIONAL)],
+          : Service request [SERVICE_TYPE,MESSAGE,REMARK],
+          : Announcement [ID,DESCRIPTION,DATE_TIME],
+          : Account_Info [ID,USER_NAME,PWD],
+          : Rent [ID,MONTH,DATE,GUEST_ID],
+          : Announcement [ID,DESCRIPTION,DATE_TIME]
+
