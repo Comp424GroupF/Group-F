@@ -1,0 +1,68 @@
+header {
+    background-color: #929ea2;
+    margin: 0;
+    height: 10%;
+    width: 100%;
+    padding: 0 40px;
+    font-size: 1.3em;
+    
+
+}
+#logo{
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Germania One';
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#headerMenu{
+   text-align: center;
+    display: inline-block;
+    width: 20%;
+}
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+html, body{
+    /* background:  */
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    display: block;
+   
+}
+
+nav {
+    float: left;
+    background: #eeeeee;
+    height: 90%;
+    margin:0;
+    padding: 25px;
+    box-shadow: 6px 7px 53px -10px rgba(0,0,0,0.44); 
+
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    line-height: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    
+}
+footer{
+    background-color: #929ea2;
+    display: inline-block;
+    height: 5%; 
+    width: 100%;
+    
+    
+}
