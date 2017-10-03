@@ -6,6 +6,7 @@ Table name: Profile [ID,NAME,ADDRESS,TEL,CITY,STATE,ZIP,CREDIT_SCORE,ACCT#,APT#,
           : Account_Info [ID,USER_NAME,PWD],
           : Rent [ID,MONTH,DATE,GUEST_ID],
           : Announcement [ID,DESCRIPTION,DATE_TIME]
-N.B. On the Dashboard moockup Service request cannot add request but update remark and delete when the process is finished.           
+N.B. On the Dashboard moockup Service request cannot add request but update remark and delete when the process is finished.
+Notification on dashboard not needed included on Announcement.
           
 
