@@ -4,4 +4,3 @@ Group Members:
 1. Chandrika Darbha
 2. Samuel Gebre Habte
 3. Alfaisal Qasem M Alqahtani
-4. Jorge Hernan Ramirez Rojas
