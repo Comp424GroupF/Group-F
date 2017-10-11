@@ -1,5 +1,5 @@
 header {
-    background-color: #929ea2;
+    background-color: #66c0e0;
     margin: 0;
     
     width: 90%;
@@ -8,6 +8,7 @@ header {
     position: relative;
     align-content: center;
     text-align: center;
+    
     
 
 }
@@ -72,14 +73,14 @@ nav ul {
 }
 nav ul li a{
     text-decoration: none;
-    color: gray;
+    color: #66c0e0;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.5em;
-    
+    text-shadow: 2px 2px 2px rgba(201,201,201, 1);
 }
 footer{
-    background-color: #929ea2;
+    background-color: #66c0e0;
     display: inline-block;
     margin: 0;
     width: 90%;
