@@ -16,9 +16,9 @@
 
           <nav class="site-nav">
               <ul>
-                <li><a href=""><i class="fa fa-home site-nav--icon"></i>Home</a></li>
-                <li data-rel="4"><a href="#"><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
-                <li data-rel="5"><a href="#"><i class="fa fa-question-circle-o site-nav--icon"></i>FAQ</a></li>
+                <li data-rel="1"><a href="#"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
+                <li data-rel="5"><a href="#"><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
+                <li data-rel="6"><a href="#"><i class="fa fa-question-circle-o site-nav--icon"></i>FAQ</a></li>
               </ul>
           </nav>
 
@@ -30,14 +30,23 @@
     <main class="content">
       <div class="nav-pane">
         <ul class="admin-menu">
-          <li data-rel="1" class="active"><a href="#">Announcement</a></li>
-          <li data-rel="2"><a href="#">Service request</a></li>
-          <li data-rel="3"><a href="#">Profile</a></li>
+          <li data-rel="2" class="active"><a href="#">Announcement</a></li>
+          <li data-rel="3"><a href="#">Service request</a></li>
+          <li data-rel="4"><a href="#">Profile</a></li>
         </ul>
       </div>
+      <section class="section-content welcome">
+        <h1>Welcome to Greenlake Apartments Application<h1>
+        <h2>Please check if you have any notifications, events or news</h2>
+        <h3>Greenlake Management Office</h3>
+        <ul>
+          <li>Office hours Monday-Friday 8:00A.M. to 5:00P.M.</li>
+          <li>Tel# 312-788-9999</li>
+          <li>info@glake.com</li>
+        </ul>
+        <p>Wish you nice stay!</p>
+      </section>
       <section class="section-content">
-        <p>Announcements data manipulated..</p>
-        <p>Add, update and delete announcement...</p>
         <p>announcement list ...</p>
       </section>
       <section class="section-content">
@@ -65,11 +74,24 @@
       </section>
       <section class="section-content">
         <p>FAQ</p>
+         <div class="collapse">
+          <h3>How can I pay my rent?</h3>
+          You can pay your rent on using your credit card or debit card on the first ten days.
+        </div>
+        <div class="collapse">
+          <h3>How can I request maintenance to my apartment?</h3>
+          <p>You can fill service request from on stating the issue to be fixed and submitting it. Then check the status of the request if it is fixed or not. Else contact the building management office.</p>
+        </div>
+        <div class="collapse">
+          <h3>How sign up for a gym?</h3>
+          <p>You can apply for gym filling service request form. Then pay the amount for half year or full year. If you want to pay a check submit it to the management office.</p>
+        </div> 
       </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="public/scripts/nav.js"></script>
     <script src="public/scripts/switch.js"></script>
+    <script src="public/scripts/collapse.js"></script>
   </body>
 </html>

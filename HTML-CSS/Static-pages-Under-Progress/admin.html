@@ -16,9 +16,9 @@
 
           <nav class="site-nav">
               <ul>
-                <li><a href=""><i class="fa fa-home site-nav--icon"></i>Home</a></li>
-                <li data-rel="6"><a href="#"><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
-                <li data-rel="7"><a href="#"><i class="fa fa-question-circle-o site-nav--icon"></i>FAQ</a></li>
+                <li data-rel="1"><a href="#"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
+                <li data-rel="7"><a href="#"><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
+                <li data-rel="8"><a href="#"><i class="fa fa-question-circle-o site-nav--icon"></i>FAQ</a></li>
               </ul>
           </nav>
 
@@ -30,20 +30,42 @@
     <main class="content">
       <div class="nav-pane">
         <ul class="admin-menu">
-          <li data-rel="1" class="active"><a href="#">Dashboard</a></li>
-          <li data-rel="2"><a href="#">Account setup</a></li>
-          <li data-rel="3"><a href="#">Service request</a></li>
-          <li data-rel="4"><a href="#">Report</a></li>
-          <li data-rel="5"><a href="#">Support</a></li>
+          <li data-rel="2" class="active"><a href="#">Dashboard</a></li>
+          <li data-rel="3"><a href="#">Account setup</a></li>
+          <li data-rel="4"><a href="#">Service request</a></li>
+          <li data-rel="5"><a href="#">Report</a></li>
+          <li data-rel="6"><a href="#">Support</a></li>
         </ul>
       </div>
+      <section class="section-content welcome">
+        <h1>Welcome to Rental Property Customer Relationship Fullstack Application<h1>
+        <h2>Created by COMP424 GROUP F MEMBERS</h2>
+        <h3>Loyola University</h3>
+        <ol>
+          <li>Samuel Gebre Habte</li>
+          <li>Alfaisal Qasem M Alqahtani</li>
+          <li>Chandrika Darbha</li>
+        </ol>
+        <p>&copy; All rights reserved</p>
+      </section>
       <section class="section-content">
         <p>Dashboard for manipulating data..</p>
         <p>Current status data will be shown here...</p>
         <p>Recent log activity ...</p>
       </section>
       <section class="section-content">
-        <p>Account Setup for creating, updating and deleting user accounts including admin access.</p>    
+        <p>Account Setup for creating, updating and deleting user accounts and profiles including admin access.</p>
+        <a href="#openAnnForm">Add Annoumcement</a>
+        <div id="openAnnForm" class="formDialog contact">
+           <form>
+            <input type="hidden" name="Id" value="ID">
+            <label>News:</label>
+            <textarea name="message" placeholder="Enter message here..." required rows="15"></textarea>
+            <input type="hidden" id="dt">
+            <input type="submit" value="Add">
+            <input type="button" id="close" value="Close">
+        </form>
+        </div>   
       </section>
        <section class="section-content">
         <p>Service requested by guest and if requested is done remark and manipulate data, admin access.</p>    
@@ -76,12 +98,29 @@
         </form>
       </section>
       <section class="section-content">
-        <p>FAQ...</p>
+        <p>FAQ</p>
+        <div class="collapse">
+          <h3>How can I pay my rent?</h3>
+          You can pay your rent on using your credit card or debit card on the first ten days.
+        </div>
+        <div class="collapse">
+          <h3>How can I request maintenance to my apartment?</h3>
+          <p>You can fill service request from on stating the issue to be fixed and submitting it. Then check the status of the request if it is fixed or not. Else contact the building management office.</p>
+        </div>
+        <div class="collapse">
+          <h3>How sign up for a gym?</h3>
+          <p>You can apply for gym filling service request form. Then pay the amount for half year or full year. If you want to pay a check submit it to the management office.</p>
+        </div>  
       </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="public/scripts/nav.js"></script>
     <script src="public/scripts/switch.js"></script>
+    <script src="public/scripts/collapse.js"></script>
+    <script src="public/scripts/close.js"></script>
+    <script type="text/javascript">
+      document.getElementById('dt').value = new Date().toDateInputValue();
+    </script>
   </body>
 </html>
