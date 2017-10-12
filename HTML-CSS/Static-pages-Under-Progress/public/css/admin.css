@@ -68,3 +68,39 @@
 .active {
   font-weight: bold;
 }
+.contact p{
+  font-weight: bold;
+  text-align: center;
+}
+.contact input {
+  padding: 10px;
+  margin: 10px;
+  width: 70%;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.contact textarea {
+  padding: 10px;
+  margin: 10px;
+  width: 70%;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.contact label {
+  display: inline-block;
+  float:left;
+  clear:left;
+  padding: 10px;
+  margin: 10px;
+  width:50px;
+  text-align: right center;
+}
+.contact input[type=submit]{
+  padding: 10px;
+  margin-left: 100px;
+  width: 70%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
