@@ -1,0 +1,156 @@
+header {
+    background-color: rgba(15, 56, 97, 0.79);
+    
+    
+    width: 100%;
+    padding: 0 5%;
+    font-size: 1.3em;
+    position: relative;
+    align-content: center;
+    text-align: center;
+   
+    
+    
+
+}
+#logo{
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Germania One';
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#logo.logoblack{
+    color: black;
+}
+#headerMenu{
+   text-align: center;
+    display: inline-block;
+    width: 20%;
+}
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+header span a {
+    margin: 10px;
+}
+
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+   
+    
+
+   
+}
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+  }
+
+#wrapper{
+    min-height: 100%;
+   
+    margin: 0 auto;
+    
+    width: 1280px;
+    
+   
+}
+section a {
+    margin: 3px;
+}
+
+nav {
+    background-color: #ffffff;
+    float: left;
+    /* background-color: transparent; */
+    /* min-height: 100%; */
+    margin:10px;
+    padding: 25px;
+    width: 20%;
+    -webkit-box-shadow: 10px 10px 33px -21px rgba(179,179,179,0.48);
+    -moz-box-shadow: 10px 10px 33px -21px rgba(179,179,179,0.48);
+    box-shadow: 10px 10px 33px -21px rgba(179,179,179,0.48);
+    /* position: sticky; */
+}
+main {
+    background-color: #ffffff;
+   margin: 10px;
+    display: inline-block;
+    padding: 30px;
+    width: 70%;
+    /* background: #f9f9f9; */
+    margin-bottom: 100px;
+    -webkit-box-shadow: 10px 10px 33px -21px rgba(179,179,179,0.48);
+    -moz-box-shadow: 10px 10px 33px -21px rgba(179,179,179,0.48);
+    box-shadow: 10px 10px 33px -21px rgba(179,179,179,0.48);
+ 
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    line-height: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(15, 56, 97, 0.79);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 2px rgba(201,201,201, 1);
+}
+footer{
+
+    width: 100%;
+    
+    
+    
+    background-color: rgba(15, 56, 97, 0.79);
+    text-align: center;
+   
+    
+    
+    
+    
+}
+p{
+    font-weight: 300;
+}
+.cheaders{
+    text-align: center;
+    margin-bottom: 2em;
+}
+input{
+    font-weight: 400;
+    margin: 0.5em;
+}
+label{
+    display: inline-block;
+    margin: 1em;
+}
+.pthumbnail{
+    max-width:300px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+}
+#wrapper.login{
+    margin: auto;
+    align-self: center;
+    padding: 0 200px;
+
+}
