@@ -3,7 +3,6 @@ header {
     
     
     width: 100%;
-    padding: 0 5%;
     font-size: 1.3em;
     position: relative;
     align-content: center;
@@ -34,7 +33,7 @@ header a {
     color: #ffffff;
 }
 header span a {
-    margin: 10px;
+    margin: 5px;
 }
 
 html, body{
@@ -66,7 +65,15 @@ html {
    
     margin: 0 auto;
     
-    width: 1280px;
+    width: 1268px;
+    
+   
+}
+#headerwrapper{
+
+    margin: 0 auto;
+    
+    width: 1268px;
     
    
 }
