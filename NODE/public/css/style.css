@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+.header {
+    border: 1px solid grey;
+    padding: 15px;
+}
+.menu {
+    width: 25%;
+    float: left;
+    padding: 15px;
+    border: 1px solid grey;
+}
+.main {
+    width: 75%;
+    height: 100%;
+    float: left;
+    padding: 15px;
+    border: 1px solid grey;
+}
+.footer {
+	border: 1px solid grey;
+}
+.err {
+	background-color: grey;
+	padding: 5px;
+	margin:3px;
+}
