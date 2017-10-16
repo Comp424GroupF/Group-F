@@ -116,11 +116,12 @@ nav ul li a{
 footer{
 
     width: 100%;
-    
+    padding: 1em;
     
     
     background-color: rgba(15, 56, 97, 0.79);
     text-align: center;
+    min-height: 100PX;
    
     
     
@@ -130,6 +131,7 @@ footer{
 p{
     font-weight: 300;
 }
+#potato{color: #f9f9f9;}
 .cheaders{
     text-align: center;
     margin-bottom: 2em;
@@ -152,5 +154,9 @@ label{
     margin: auto;
     align-self: center;
     padding: 0 200px;
+
+}
+.footerRow{
+display: inline;
 
 }

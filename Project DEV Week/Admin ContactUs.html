@@ -28,25 +28,31 @@
             <li><a href="Admin Profile.html">Profile</a></li>
         </ul>
     </nav>
-    <main style="background-color: #F1F1F1">
-        <br/> <br/> 
-        <h2 style="text-align: center; color: navy;"> Contact us today to learn more about GreenLake Apartments </h2>
-        <br/>
-        <h3 style="color: grey; text-indent: 18.5em"> Name </h3>
-        <textarea style="width: 400px; height: 20px; margin-left: 350px; background-color: #E5E5E5"></textarea>
-        <h3 style="color: grey; text-indent: 18.5em"> Email </h3>
-        <textarea style="width: 400px; height: 20px; margin-left: 350px; background-color: #E5E5E5"></textarea>
-        <h3 style="color: grey; text-indent: 18.5em"> Phone number </h3>
-        <textarea style="width: 400px; height: 20px; margin-left: 350px; background-color: #E5E5E5"></textarea>
-        <h3 style="color: grey; text-indent: 18.5em"> Message </h3>
-        <textarea style="width: 400px; height: 200px; margin-left: 350px; background-color: #E5E5E5"></textarea>
-        <br/>
-        <span id="buttonPosition">
-        <input type="button" onclick="alert('Contact Information has been successfully submitted.')"; value="Submit">
-        </span>
-        <br/> <br/> <br/>
-    </main>
+    <main >
+        
+       <h2 class="cheaders"> Contact us today to learn more about <span class="logoblack" id="logo"> GREENLAKE Apartments</span> </h2>
+       
+       <form action="">
+          
+           <label for="name">Name:</label>
+           <input type="text" name="name" id="name" placeholder="Kevin Parker" required />
+           <br>
+           <label for="email">Email:</label>
+           <input type="email" name="email" id="email" required placeholder="your email">
+           <br>
+           <label for="phone">Phone Number:</label>
+           <input type="tel" name="phone" id="phone"  pattern="tel" placeholder="(112)-345-6789"  />
+           <br>
+           <label for="message">Message:</label>
+           <textarea name="message" id="message" cols="30" rows="10"></textarea>
+           <br>
+           <input type="submit" value="Submit" />
+           
+       
+       
+   </form>
+   </main>
     </div>
-    <footer>this is a footer</footer>
+    <footer>© Group F Project for COMP 424 DEV Week</footer>
 </body>
 </html>
