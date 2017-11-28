@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>Contact Us</title>
     <link href="https://fonts.googleapis.com/css?family=Germania+One|Roboto:700,300,100" rel="stylesheet">
     <link rel="stylesheet" href="Website.css">
     <link rel="stylesheet" href="grid.css">
@@ -85,31 +85,27 @@
             
             <div class="col-8 main">
                 <section>
-                    <h2> Announcements </h2>
-            
-                    <ul>
-                        <li>
-                            <h3>Bike storage temporarily shifted.</h3>
-                        </li>
-                        <li>
-                            <h3>New laundry service.</h3>
-                        </li>
-                        <li>
-                            <h3>5th floor parking maintenance.</h3>
-                        </li>
-                        <span>
-                            <a href="Announcements.html"> Details </a>
-                        </span>
-                    </ul>
-                    <hr>
-                    <h2> Notifications </h2>
-
-                    <ul>
-                        <li> Your rent is due on October 15, 2017. </li>
-                        <p>
-                            <a href="Pay Now.html"> Pay now </a>
-                        </p>
-                    </ul>
+                    <h2 class="cheaders"> Contact us today to learn more about <span class="logoblack" id="logo"> GREENLAKE Apartments</span> </h2>
+                    
+                    <form action="">
+                       
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Kevin Parker" required />
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required placeholder="your email">
+                        <br>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone"  pattern="tel" placeholder="(112)-345-6789"  />
+                        <br>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <br>
+                        <input type="submit" value="Submit" />
+                        
+                    
+                    
+                </form>
                 </section>
             </div>
         </div>

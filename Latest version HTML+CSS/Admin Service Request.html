@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Service Request List</title>
+    <link href="https://fonts.googleapis.com/css?family=Germania+One|Roboto:700,300,100" rel="stylesheet">
+    <link rel="stylesheet" href="Website.css">
+</head>
+<body>
+    <header>
+        <div id="headerwrapper">
+        <span id="logo">
+            <H1>GreenLake Apartments</H1>
+        </span>
+        <span id="headerMenu">
+            <a href="admin Home.html">Home</a>    
+            <a href="admin ContactUs.html">Contact Us</a>
+            <a href="admin FAQ.html">FAQ</a>
+        </span>
+    </div>
+    </header>
+    <div id="wrapper">
+    <nav>
+        <ul>
+            <li><a href="Admin Announcement List.html">Announcements</a></li>
+            <li><a href="Admin Service Request.html">Service Request</a></li>
+            <li><a href="">Notifications</a></li>
+            <li><a href="Admin Profile.html">Profile</a></li>
+        </ul>
+    </nav>
+    <main >
+        <br /> 
+        <div>
+            <span style="font-size: 28px; margin-left: 440px; color: grey"> Service Request List </span>
+            <span style="font-size: 20px; color: grey; margin-left: 370px; font-style: italic"> Admin </span>
+        </div>
+        <br/> <br/> <br/>
+        <span style="font-size: 20px; margin-left: 300px; color: grey"> Apt #: </span>
+        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
+        <span id="ASRSearchbutton">
+            <input type="button" value="Search">
+        </span>
+        <br/> <br/> <br/>
+        <div class="SRGym">
+
+            <h3> Gym </h3>
+            <p> Want to sign up for gym membership on October 15,2017. </p>
+        </div> 
+        <br/> <br/>
+        <div class="SRCleaning">
+            <h3> Cleaning </h3>
+            <p> Want cleaning service for the entire apartment on October 10, 2017. </p>
+        </div>
+        <br/> <br/>
+        <div class="SRPost">
+            <h3> Post </h3>
+            <p> Expecting a UPS shipment of a flat-screen TV around October 12, 2017. </p>
+        </div>
+        <br /> <br />
+        <div class="SRMaintenance">
+            <h3> Maintenance </h3>
+            <p> Master bathroom sink is not draining. </p>
+        </div>
+
+        <span id="ASRAdd">
+            <input type="button" ; onclick="parent.location='Admin Add Service Request.html'" ; value="Add">
+        </span>
+        <span id="ASRUpdate">
+            <input type="button" ; onclick="parent.location='Admin UpdateServiceRequest.html'" ; value="Update">
+        </span>
+        <span id="ASRDelete">
+            <input type="button" ; onclick="parent.location='Admin DeleteServiceRequest.html'"; value="Delete">
+        </span>
+            <br /> <br /> <br />
+
+</main>
+</div>
+<footer>© Group F Project for COMP 424 DEV Week</footer>
+</body>
+</html>

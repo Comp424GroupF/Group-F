@@ -1,80 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>Profile</title>
     <link href="https://fonts.googleapis.com/css?family=Germania+One|Roboto:700,300,100" rel="stylesheet">
     <link rel="stylesheet" href="Website.css">
     <link rel="stylesheet" href="grid.css">
     <script src="https://use.fontawesome.com/60f13f8319.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
-<body>
-        <header>
-          <div class="row">
-            <div class="col-4">
-            <span id="logo">
-                <H1>GreenLake Apartments</H1>
-            </span>
-            </div>
-            <div class="col-6">
-                <span>
-                    <a href="Home.html"><i class="fa fa-home WIcon" aria-hidden="true"></i>Home</a>
-                    <a href="ContactUs.html"><i class="fa fa-info-circle" aria-hidden="true"></i>Contact Us</a>
-                    <a href="FAQ.html"><i class="fa fa-question-circle WIcon" aria-hidden="true"></i>FAQ</a>
 
-                  </span>
+<body>
+    <!-- header all pages -->
+    <header>
+        <div class="row">
+            <div class="col-12">
+                <span id="logo">
+                    <H1>GreenLake Apartments</H1>
+                </span>
+            </div>
+            <!-- <div class="col-6">
+                <span>
+                    <a href="Home.html">Home</a>
+                    <a href="ContactUs.html">Contact Us</a>
+                    <a href="FAQ.html">FAQ</a>
+                </span>
             </div>
             <div class="col-2">
-              <i class="fa fa-user-circle WIcon" aria-hidden="true"></i>
-              <i class="fa fa-sign-out WIcon" aria-hidden="true"></i>
+                <i class="fa fa-user-circle WIcon" aria-hidden="true"></i>
+                <i class="fa fa-sign-out WIcon" aria-hidden="true"></i>
+            </div> -->
+        </div>
+    </header>
+    
+
+    <!-- main page contant  -->
+    <main>
+        <div class="row wrapper">
+            <div class="col-3 nav">
+                <nav>
+                    <ul>
+                        <li id="Home">
+                            <i class="fa fa-home fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="Home.html">Home</a>
+                        </li>
+                        <li id="Announcements">
+                            <i class="fa fa-bullhorn fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="Announcements.html">Announcements</a>
+                        </li>
+                        <li id="Notifications">
+                                <i class="fa fa-bell-o fa-2x fa-fw" aria-hidden="true"></i>
+                                <a href="Notifications.html">Notifications</a>
+                        </li>
+                        <li id="Service Request">
+                            <i class="fa fa-wrench fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="Service Request.html">Service Request</a>
+                        </li>
+                        <hr>
+                        <li id="Contact Us">
+                            <i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="ContactUs.html">Contact Us</a></li>
+                        <li id="FAQ">
+                            <i class="fa fa-question-circle-o fa-2x fa-fw" aria-hidden="true"></i>
+                            <a  href="FAQ.html">FAQ</a>
+                        </li>
+                        <hr>
+                        <li id="Profile">
+                                <i class="fa fa-user-circle fa-2x fa-fw" aria-hidden="true"></i>
+                                <a href="Profile.html">Profile</a>
+                        </li>
+                        <li id="Sign out">
+                                <i class="fa fa-sign-out fa-2x fa-fw " aria-hidden="true"></i>
+                                <a href="">Sign out</a></li> 
+                        </li>
+                        <li>
+                        </li>
+                    </ul>
+                </nav>
+            </div> 
+        
+            
+            <div class="col-8 main">
+                <section>
+                    <h1 class="cheaders"> Welcome Noel!</h1>
+                    
+                                 <img class="pthumbnail" src="profile-42914_960_720.png" alt="">
+                                 <h3>Fullname: Noel Gallagher <span id="potato">aka potato</span> </h3>
+                                 <h3> Address: 4500 North Clark Ave. Chicago, IL 60640</h3>
+                                 <h3> Unit #401S </h3>
+                                 <h3> Two Bedroom </h3>
+                                 <button class="update">Update  </button>
+                </section>
             </div>
-          </div>
-            </header>
-            <main >
-
-<div class="row wrapper">
-
-    <div class="col-3 nav">
-              <nav>
-                <ul>
-            <li><a href="Announcements.html">Announcements</a></li>
-            <li><a href="Service Request.html">Service Request</a></li>
-            <li><a href="Notifications.html">Notifications</a></li>
-            <li><a href="Profile.html">Profile</a></li>
-                </ul>
-            </nav>
-          </div>
-          <div class="col-8 main">
-            <section>
-
-
-            <h1 class="cheaders"> Welcome Noel!</h1>
-
-             <img class="pthumbnail" src="profile-42914_960_720.png" alt="">
-             <h3>Fullname: Noel Gallagher <span id="potato">aka potato</span> </h3>
-             <h3> Address: 4500 North Clark Ave. Chicago, IL 60640</h3>
-             <h3> Unit #401S </h3>
-             <h3> Two Bedroom </h3>
-             <button class="update">Update  </button>
-             </section>
-
-      </div>
-      </div>
-
+        </div>
     </main>
-
+    <!-- footer all pages  -->
     <footer>
-      <div class="row">
+        <div class="row">
 
-      <div class="col-12">
-      © Group F Project for COMP 424 DEV Week
-      </div>
-      </div>
+            <div class="col-12">
+                © Group F Project for COMP 424 DEV Week
+            </div>
+        </div>
     </footer>
-<div class="">
-
-</div>
+    
+    <script type="text/javascript" src="main.js"></script>
+    
 </body>
+
 </html>

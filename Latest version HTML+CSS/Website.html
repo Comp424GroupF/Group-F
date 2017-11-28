@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Germania+One|Roboto:700,300,100" rel="stylesheet">
+    <link rel="stylesheet" href="Website.css">
+    <link rel="stylesheet" href="grid.css">
+    <script src="https://use.fontawesome.com/60f13f8319.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <!-- header all pages -->
+    <header>
+        <div class="row">
+            <div class="col-12">
+                <span id="logo">
+                    <H1>GreenLake Apartments</H1>
+                </span>
+            </div>
+            <!-- <div class="col-6">
+                <span>
+                    <a href="Home.html">Home</a>
+                    <a href="ContactUs.html">Contact Us</a>
+                    <a href="FAQ.html">FAQ</a>
+                </span>
+            </div>
+            <div class="col-2">
+                <i class="fa fa-user-circle WIcon" aria-hidden="true"></i>
+                <i class="fa fa-sign-out WIcon" aria-hidden="true"></i>
+            </div> -->
+        </div>
+    </header>
+    
+
+    <!-- main page contant  -->
+    <main>
+        <div class="row wrapper">
+            <div class="col-3 nav">
+                <nav>
+                    <ul>
+                        <li id="Home">
+                            <i class="fa fa-home fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="Home.html">Home</a>
+                        </li>
+                        <li id="Announcements">
+                            <i class="fa fa-bullhorn fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="Announcements.html">Announcements</a>
+                        </li>
+                        <li id="Notifications">
+                                <i class="fa fa-bell-o fa-2x fa-fw" aria-hidden="true"></i>
+                                <a href="Notifications.html">Notifications</a>
+                        </li>
+                        <li id="Service Request">
+                            <i class="fa fa-wrench fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="Service Request.html">Service Request</a>
+                        </li>
+                        <hr>
+                        <li id="Contact Us">
+                            <i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="ContactUs.html">Contact Us</a></li>
+                        <li id="FAQ">
+                            <i class="fa fa-question-circle-o fa-2x fa-fw" aria-hidden="true"></i>
+                            <a  href="FAQ.html">FAQ</a>
+                        </li>
+                        <hr>
+                        <li id="Profile">
+                                <i class="fa fa-user-circle fa-2x fa-fw" aria-hidden="true"></i>
+                                <a href="Profile.html">Profile</a>
+                        </li>
+                        <li id="Sign out">
+                                <i class="fa fa-sign-out fa-2x fa-fw " aria-hidden="true"></i>
+                                <a href="">Sign out</a></li> 
+                        </li>
+                        <li>
+                        </li>
+                    </ul>
+                </nav>
+            </div> 
+        
+            
+            <div class="col-8 main">
+                <section>
+                    <br/>
+                    <h2 style="color: grey; font-family:'Roboto'; text-align: center"> Make a payment </h2>
+            
+                    <p style="color: grey; font-family:'Roboto'; font-size: 20px; text-indent: 1.0em"> All fields marked with <span style="color:red"> * </span> are required.</p>
+                    <p style="color: grey; font-family:'Roboto'; font-size: 20px; text-indent: 2.0em"><input type="checkbox"> Pay with an existing credit card </p>
+                    <p style="color: grey; font-family:'Roboto'; font-size: 20px; text-indent: 5.0em"> Select a card: </p>
+                    <p style="color: grey; font-family:'Roboto'; font-size: 18px; margin-left: 140px;"><input type="checkbox"> ending in 1234 (exp 02/2018) </p>
+                    <p style="color: grey; font-family:'Roboto'; font-size: 18px; margin-left: 140px;"><input type="checkbox"> ending in 5678 (exp 09/2018) </p>
+                    <p style="color: grey; font-family:'Roboto'; font-size: 20px; text-indent: 2.0em"><input type="checkbox"> Add a new credit card: </p>
+                    <span style="font-size: 20px; margin-left: 100px; color: grey"> <span style="color: red"> * </span> Card Number: </span>
+                    <textarea style="width: 300px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
+                    <br/>
+                    <span style="font-size: 20px; margin-left: 100px; color: grey"> <span style="color: red"> * </span> Expiration Date (MM/YY): </span>
+                    <textarea style="width: 198px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
+                    <br/>
+                    <span style="font-size: 20px; margin-left: 100px; color: grey"> <span style="color: red"> * </span> CVC code (3-digits): </span>
+                    <textarea style="width: 98px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
+                    <br/>
+                    <p style="color: grey; font-family:'Roboto'; font-size: 20px; text-indent: 4.8em"><input type="checkbox"> Save to account </p>
+                    <br />
+                    <p style="color: grey; font-family:'Roboto'; font-size: 20px; text-indent: 2.0em"><input type="checkbox"> I have read and accepted the <a href=""> terms & conditions</a>.<span style="color: red"> * </span> </p>
+                    <br/> <br/>
+                    <span id="payNowbutton">
+                        <input type="button" ; onclick="alert('Payment has been successfully made.')"; value="Pay Now">
+                    </span>
+                    <br/> <br/>
+            
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- footer all pages  -->
+    <footer>
+        <div class="row">
+
+            <div class="col-12">
+                © Group F Project for COMP 424 DEV Week
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="main.js"></script>
+    
+</body>
+
+</html>

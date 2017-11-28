@@ -1,5 +1,5 @@
 header {
-    background-color: rgba(15, 56, 97, 0.79);
+    background-color: #6CAEB2;
     font-size: 1.3em;
     text-align: center;
 }
@@ -23,9 +23,7 @@ header a {
 header span a {
     margin: 30px;
 }
-i{
-  margin: 40px 5px;
-}
+
 
 html, body{
     margin: 0;
@@ -69,7 +67,7 @@ section a {
 }
 
 .nav {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 
     /* background-color: transparent; */
     /* min-height: 100%; */
@@ -83,7 +81,7 @@ section a {
     background-color: #ffffff;
 
 
-
+    min-height: 75%;
     /* background: #f9f9f9; */
     margin-bottom: 100px;
     -webkit-box-shadow: 10px 10px 33px -21px rgba(179,179,179,0.48);
@@ -95,14 +93,25 @@ nav ul {
     list-style: none;
     padding: 0;
     line-height: 30px;
-}
+} 
 nav ul li a{
     text-decoration: none;
-    color: rgba(15, 56, 97, 0.79);
+    color: #B28464;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.5em;
     text-shadow: 2px 2px 2px rgba(201,201,201, 1);
+}
+nav ul li a:hover{
+    color: #916B52;
+}
+
+.active{
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    background-color: #FFD3B4;
 }
 footer{
 
@@ -110,7 +119,7 @@ footer{
     padding: 1em;
 
 
-    background-color: rgba(15, 56, 97, 0.79);
+    background-color: #6CAEB2;
     text-align: center;
     min-height: 100PX;
 }
@@ -147,11 +156,12 @@ display: inline;
 
 }
 .WIcon{
-  color: #ffffff;
+  /* color: #FFD3B4; */
 }
 .maincontant{
 align-content: center;
 }
 main{
   min-height: 75%;
-}
+}  
+  
