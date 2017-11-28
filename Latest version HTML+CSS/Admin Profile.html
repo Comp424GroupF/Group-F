@@ -1,87 +1,115 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin Profile</title>
+    <title>Home</title>
     <link href="https://fonts.googleapis.com/css?family=Germania+One|Roboto:700,300,100" rel="stylesheet">
     <link rel="stylesheet" href="Website.css">
+    <link rel="stylesheet" href="grid.css">
+    <script src="https://use.fontawesome.com/60f13f8319.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
+
 <body>
+    <!-- header all pages -->
     <header>
-        <div id="headerwrapper">
-        <span id="logo">
-            <H1>GreenLake Apartments</H1>
-        </span>
-        <span id="headerMenu">
-            <a href="admin Home.html">Home</a>    
-            <a href="admin ContactUs.html">Contact Us</a>
-            <a href="admin FAQ.html">FAQ</a>
-        </span>
-    </div>
-    </header>
-    <div id="wrapper">
-    <nav>
-        <ul>
-            <li><a href="Admin Announcement List.html">Announcements</a></li>
-            <li><a href="Admin Service Request.html">Service Request</a></li>
-            <li><a href="">Notifications</a></li>
-            <li><a href="Admin Profile.html">Profile</a></li>
-        </ul>
-    </nav>
-    <main >
-        <br/> 
-        <div>
-            <span style="font-size: 28px; margin-left: 580px; color: grey"> Profile </span>
-            <span style="font-size: 20px; color: grey; margin-left: 435px; font-style: italic"> Admin </span>
+        <div class="row">
+            <div class="col-12">
+                <span id="logo">
+                    <H1>GreenLake Apartments</H1>
+                </span>
+            </div>
+            <!-- <div class="col-6">
+                <span>
+                    <a href="Home.html">Home</a>
+                    <a href="ContactUs.html">Contact Us</a>
+                    <a href="FAQ.html">FAQ</a>
+                </span>
+            </div>
+            <div class="col-2">
+                <i class="fa fa-user-circle WIcon" aria-hidden="true"></i>
+                <i class="fa fa-sign-out WIcon" aria-hidden="true"></i>
+            </div> -->
         </div>
-        <br/> 
-        <span style="font-size: 20px; margin-left: 880px; color: grey"> Search Apt#: </span>
-        <textarea style="width: 150px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
-        <span id="profilebutton">
-            <input type="button" value="Search">
-            </span>
+    </header>
+    
 
-        <span style="font-size: 20px; margin-left: 228px; color: grey"> Name: </span>
-        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
-        <br /> <br />
-        <span style="font-size: 20px; margin-left: 270px; color: grey"> Address: </span>
-        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
-        <br/> <br/>
-        <span style="font-size: 20px; margin-left: 300px; color: grey"> City: </span>
-        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
-        <br /> <br />
-        <span style="font-size: 20px; margin-left: 295px; color: grey"> State: </span>
-        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
-        <br/> <br/>
-        <span id="profileAdd">
-            <input type="button"; onclick="parent.location='Admin Add Profile.html'" ; value="Add">
-        </span>
-        <span style="font-size: 20px; margin-left: 215px; color: grey"> Zip Code: </span>
-        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
-        <br /> <br />
-        <span id="profileUpdateDelete">
-            <input type="button"; onclick="parent.location='Admin Update Delete Profile.html'" ; value="Update or Delete">
-        </span>
-        <span style="font-size: 20px; margin-left: 122px; color: grey"> Credit Score: </span>
-        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
-        <br/> <br/>
-
-        <span style="font-size: 20px; margin-left: 290px; color: grey"> Apt #: </span>
-        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
-        <br /> <br />
-        <span style="font-size: 20px; margin-left: 253px; color: grey"> Account #: </span>
-        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
-        <br/> <br/>
-        <span style="font-size: 20px; margin-left: 260px; color: grey"> Apt Type: </span>
-        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
-        <br /> <br />
-        <span style="font-size: 20px; margin-left: 280px; color: grey"> Notice: </span>
-        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
-
+    <!-- main page contant  -->
+    <main>
+        <div class="row wrapper">
+            <div class="col-3 nav">
+                <nav>
+                    <ul>
+                        <li id="Home">
+                            <i class="fa fa-home fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="admin Home.html">Home</a>
+                        </li>
+                        <li id="Announcements">
+                            <i class="fa fa-bullhorn fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="Admin Announcement List.html">Announcements</a>
+                        </li>
+                        <li id="Notifications">
+                                <i class="fa fa-bell-o fa-2x fa-fw" aria-hidden="true"></i>
+                                <a href="">Notifications</a>
+                        </li>
+                        <li id="Service Request">
+                            <i class="fa fa-wrench fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="Admin Service Request.html">Service Request</a>
+                        </li>
+                        <hr>
+                        <li id="Contact Us">
+                            <i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="admin ContactUs.html">Contact Us</a></li>
+                        <li id="FAQ">
+                            <i class="fa fa-question-circle-o fa-2x fa-fw" aria-hidden="true"></i>
+                            <a  href="admin FAQ.html">FAQ</a>
+                        </li>
+                        <hr>
+                        <li id="Profile">
+                                <i class="fa fa-user-circle fa-2x fa-fw" aria-hidden="true"></i>
+                                <a href="Admin Profile.html">Profile</a>
+                        </li>
+                        <li id="Sign out">
+                                <i class="fa fa-sign-out fa-2x fa-fw " aria-hidden="true"></i>
+                                <a href="">Sign out</a></li> 
+                        </li>
+                        <li>
+                        </li>
+                    </ul>
+                </nav>
+            </div> 
+        
+            
+            <div class="col-8 main">
+                <section>
+                    <span > Admin </span>
+                    <div>
+                        <span style="font-size: 25px; margin-left: 280px; color: grey"><a href="Admin Dashboard.html"> Dashboard </span></a>
+                        <span style="font-size: 25px; color: grey; margin-left: 60px"><a href="Admin Account Setup.html"> Account Setup </span></a>
+                        <span style="font-size: 25px; margin-left: 60px; color: grey"><a href=""> Report </span></a>
+                        <span style="font-size: 25px; margin-left: 60px; color: grey"><a href=""> Support </span></a>
+                    </div>
+                    <br /> 
+            
+                </section>
+            </div>
+        </div>
     </main>
-    </div>
-    <footer>© Group F Project for COMP 424 DEV Week</footer>
+    <!-- footer all pages  -->
+    <footer>
+        <div class="row">
+
+            <div class="col-12">
+                © Group F Project for COMP 424 DEV Week
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="main.js"></script>
+    
 </body>
+
 </html>
