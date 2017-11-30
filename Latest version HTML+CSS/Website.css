@@ -177,4 +177,14 @@ align-content: center;
 main{
   min-height: 75%;
 }  
-  
+
+.hiddenQ{
+    height: 0;
+    overflow: hidden;
+    
+}
+
+.question h3:hover{
+    color: gray;
+    cursor: pointer;
+}

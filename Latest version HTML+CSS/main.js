@@ -9,4 +9,9 @@ $(function(){
             $(this).addClass('active');
         }
     })
-})
+});
+
+
+$(".question").on("click", function () {
+         $(this).find("p").toggleClass("hiddenQ");
+});
