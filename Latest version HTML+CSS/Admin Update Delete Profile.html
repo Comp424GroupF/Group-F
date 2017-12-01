@@ -1,85 +1,141 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin Update/Delete Profile</title>
+    <title>Admin Add Profile</title>
     <link href="https://fonts.googleapis.com/css?family=Germania+One|Roboto:700,300,100" rel="stylesheet">
     <link rel="stylesheet" href="Website.css">
+    <link rel="stylesheet" href="grid.css">
+    <script src="https://use.fontawesome.com/60f13f8319.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
+
 <body>
+    <!-- header all pages -->
     <header>
-        <div id="headerwrapper">
-        <span id="logo">
-            <H1>GreenLake Apartments</H1>
-        </span>
-        <span id="headerMenu">
-            <a href="admin Home.html">Home</a>    
-            <a href="admin ContactUs.html">Contact Us</a>
-            <a href="admin FAQ.html">FAQ</a>
-        </span>
-    </div>
+        <div class="row">
+            <div class="col-12">
+                <span id="logo">
+                    <H1>GreenLake Apartments</H1>
+                </span>
+           
     </header>
-    <div id="wrapper">
-    <nav>
-        <ul>
-            <li><a href="Admin Announcement List.html">Announcements</a></li>
-            <li><a href="Admin Service Request.html">Service Request</a></li>
-            <li><a href="">Notifications</a></li>
-            <li><a href="Admin Profile.html">Profile</a></li>
-        </ul>
-    </nav>
+    
+
+    <!-- main page contant  -->
     <main>
-        <br />
-        <div>
-            <span style="font-size: 28px; margin-left: 490px; color: grey"> Update or Delete Profile </span>
-            <span style="font-size: 20px; color: grey; margin-left: 310px; font-style: italic"> Admin </span>
-        </div>
-        <br />
-        <span style="font-size: 20px; margin-left: 880px; color: grey"> Search Apt#: </span>
-        <textarea style="width: 150px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
+        <div class="row wrapper">
+            <div class="col-3 nav">
+                <nav>
+                    <ul>
+                        <li id="Home">
+                            <i class="fa fa-home fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="admin Home.html">Home</a>
+                        </li>
+                        <li id="Announcements">
+                            <i class="fa fa-bullhorn fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="Admin Announcement List.html">Announcements</a>
+                        </li>
+                       
+                        <li id="Service Request">
+                            <i class="fa fa-wrench fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="Admin Service Request.html">Service Request</a>
+                        </li>
+                        <hr>
+                        <li id="Contact Us">
+                            <i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="admin ContactUs.html">Contact Us</a></li>
+                        <li id="FAQ">
+                            <i class="fa fa-question-circle-o fa-2x fa-fw" aria-hidden="true"></i>
+                            <a  href="admin FAQ.html">FAQ</a>
+                        </li>
+                        <hr>
+                        
+                        <li id="Sign out">
+                                <i class="fa fa-sign-out fa-2x fa-fw " aria-hidden="true"></i>
+                                <a href="">Sign out</a></li> 
+                        </li>
+                        <li>
+                        </li>
+                    </ul>
+                </nav>
+            </div> 
+        
+            
+            <div class="col-8 main">
+                <section>
+                    <br />
+                    <div>
+                        <span style="font-size: 28px; margin-left: 270px; color: grey; font-weight: bold"> Update or Delete Profile </span>
+                        
+                    </div>
+                    <br /> <br/>
+
+                    <span style="font-size: 20px; margin-left: 250px; color: grey"> Search Apt#: </span>
+        <textarea style="width: 150px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea> 
         <span id="profilebutton">
-            <input type="button" value="Search">
+            <input type="button" value="Search"> 
         </span>
-        <span style="font-size: 20px; margin-left: 228px; color: grey"> Name: </span>
+        <br><br>
+        <span style="font-size: 20px; margin-left: 165px; color: grey"> Name: </span>
         <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
         <br /> <br />
-        <span style="font-size: 20px; margin-left: 270px; color: grey"> Address: </span>
+        <span style="font-size: 20px; margin-left: 147px; color: grey"> Address: </span>
         <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
         <br /> <br />
-        <span style="font-size: 20px; margin-left: 300px; color: grey"> City: </span>
+        <span style="font-size: 20px; margin-left: 185px; color: grey"> City: </span>
         <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
         <br /> <br />
-        <span style="font-size: 20px; margin-left: 295px; color: grey"> State: </span>
+        <span style="font-size: 20px; margin-left: 173px; color: grey"> State: </span>
         <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
         <br /> <br />
 
-        <span style="font-size: 20px; margin-left: 260px; color: grey"> Zip Code: </span>
+        <span style="font-size: 20px; margin-left: 140px; color: grey"> Zip Code: </span>
         <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
         <br /> <br />
-        <span id="profileUpdate">
+       
+        <span style="font-size: 20px; margin-left: 110px; color: grey"> Credit Score: </span>
+        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
+        <br /> <br />
+        
+        <span style="font-size: 20px; margin-left: 170px; color: grey"> Apt #: </span>
+        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
+        <br /> <br />
+        <span style="font-size: 20px; margin-left: 130px; color: grey"> Account #: </span>
+        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
+        <br /> <br />
+        <span style="font-size: 20px; margin-left: 143px; color: grey"> Apt Type: </span>
+        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
+        <br /> <br />
+        <span style="font-size: 20px; margin-left: 163px; color: grey"> Notice: </span>
+        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
+        <br><br>
+         <span style = "margin-left: 350px">
             <input type="button" ; onclick="alert('Profile has been successfully updated.')" ; value="Update">
-        </span>
-        <span style="font-size: 20px; margin-left: 173px; color: grey"> Credit Score: </span>
-        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
-        <br /> <br />
-        <span id="profileDelete">
             <input type="button" ; onclick="alert('Profile has been successfully deleted.')" value="Delete">
         </span>
-        <span style="font-size: 20px; margin-left: 233px; color: grey"> Apt #: </span>
-        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
-        <br /> <br />
-        <span style="font-size: 20px; margin-left: 253px; color: grey"> Account #: </span>
-        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
-        <br /> <br />
-        <span style="font-size: 20px; margin-left: 260px; color: grey"> Apt Type: </span>
-        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
-        <br /> <br />
-        <span style="font-size: 20px; margin-left: 280px; color: grey"> Notice: </span>
-        <textarea style="width: 370px; height: 20px; margin-left: 10px; background-color: #E5E5E5"></textarea>
+             
+                </section>
+            </div>
+        </div>
     </main>
-    </div>
-    <footer>© Group F Project for COMP 424 DEV Week</footer>
+    <!-- footer all pages  -->
+    <footer>
+        <div class="row">
+
+            <div class="col-12">
+                © Group F Project for COMP 424 DEV Week
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="main.js"></script>
+    
 </body>
+
 </html>
+
+

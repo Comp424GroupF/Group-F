@@ -21,19 +21,7 @@
                 <span id="logo">
                     <H1>GreenLake Apartments</H1>
                 </span>
-            </div>
-            <!-- <div class="col-6">
-                <span>
-                    <a href="Home.html">Home</a>
-                    <a href="ContactUs.html">Contact Us</a>
-                    <a href="FAQ.html">FAQ</a>
-                </span>
-            </div>
-            <div class="col-2">
-                <i class="fa fa-user-circle WIcon" aria-hidden="true"></i>
-                <i class="fa fa-sign-out WIcon" aria-hidden="true"></i>
-            </div> -->
-        </div>
+            
     </header>
     
 
@@ -55,10 +43,7 @@
                                 <i class="fa fa-bell-o fa-2x fa-fw" aria-hidden="true"></i>
                                 <a href="Notifications.html">Notifications</a>
                         </li>
-                        <li id="Service Request">
-                            <i class="fa fa-wrench fa-2x fa-fw" aria-hidden="true"></i>
-                            <a href="Service Request.html">Service Request</a>
-                        </li>
+                        
                         <hr>
                         <li id="Contact Us">
                             <i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
@@ -84,38 +69,38 @@
         
             
             <div class="col-8 main">
-                <section>
+                <section style = "color: grey">
                     <section>
-                        
+                                <div style = "text-align: right"><a href="Request List.html">My Request List </a> </div> 
                        
-                                <h1 class="cheaders">New Service Request</h1>
-                            <h5>Apt #401S</h5>
-                            <a href="Request List.html">My Request List </a>  
+                                <span style="font-size: 23px"><h1 class="cheaders">New Service Request</h1></span>
+                           
+                           
                     </section>
+
+                    <div style = "margin-top: -30px; margin-left: 150px">
         
-        
-        
-        
-        
-                    
                         <form>
                                
-                            <label for="ServiceType">Service Type:</label>
+                            <span style = "font-size: 20px; margin-left: -75px"><label for="ServiceType">Service Type:</label></span>
                             
+                     <span style = "margin-left: -5px">       
                       <select name="ServiceType" id="ServiceType" title="ServiceType" required>
-                      <option value="0" selected disabled>Chose one</option>
+                      <option value="0" selected disabled>Choose one</option>
                       <option value="Gym">Gym</option>
                       <option value="Maintenance">Maintenance</option>
                       <option value="Cleaning">Cleaning</option>
                       <option value="Postal">Postal delivery</option>
-                    </select>
+                    </select> </span>
                     
-                            <br>
+                            <br><br>
                             
-                                <label for="message">Message:</label>
-                                <textarea name="message" id="message" cols="30" rows="10" required placeholder="Please provide a detailed description of the problem."></textarea>
-                            <br>
-                            <input type="submit" value="Submit" />
+                             <span style="font-size: 20px; margin-left: -28px; color: grey"> Message: </span><br>
+                    <textarea style="width: 370px; height: 120px; margin-left: 80px; background-color: #E5E5E5"></textarea>
+                    <br /> <br />
+                </div>
+                             <span style = "margin-left: 540px">  
+                            <input type="submit" value="Submit" /></span>
                         </form>
                 </section>
             </div>
