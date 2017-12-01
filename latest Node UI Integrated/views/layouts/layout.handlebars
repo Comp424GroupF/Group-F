@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Germania+One|Roboto:700,300,100" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Website.css">
+    <link rel="stylesheet" href="/css/grid.css">
+</head>
+<body>
+        <header>
+                <div id="headerwrapper">
+                        <span id="logo">
+                            <H1>GreenLake Apartments</H1>
+                        </span>
+                    <!--<span id="headerMenu">
+                        <a href="/">Home</a>    
+                        <a href="/contact">Contact Us</a>
+                        <a href="/faq">FAQ</a>
+                    </span> -->
+                </div>
+        </header>
+    <main>
+      <div id="wrapper">
+        <div class="col-3 nav">
+              <nav>
+                    <ul>
+                        <li id="Home">
+                            <i class="fa fa-home fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="/">Home</a>
+                        </li>
+                        {{#if user}}
+                        <li id="Announcements">
+                            <i class="fa fa-bullhorn fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="/notices/announcement">Announcements</a>
+                        </li>
+                        <li id="Notifications">
+                                <i class="fa fa-bell-o fa-2x fa-fw" aria-hidden="true"></i>
+                                <a href="/users/notification">Notifications</a>
+                        </li>
+                        <li id="Service Request">
+                            <i class="fa fa-wrench fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="/requests/servicerequest">Service Request</a>
+                        </li>
+                        <li id="Profile">
+                                <i class="fa fa-user-circle fa-2x fa-fw" aria-hidden="true"></i>
+                                <a href="/profiles/profile">Profile</a>
+                        </li>
+                        <li id="Sign out">
+                                <i class="fa fa-sign-out fa-2x fa-fw " aria-hidden="true"></i>
+                                <a href="/users/logout">Sign out</a></li> 
+                        </li>
+                        <hr>
+                        {{else}}
+                        <li id="Contact Us">
+                            <i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="/users/register">Register</a></li>
+                        {{/if}}
+                        <li id="FAQ">
+                        <li id="Contact Us">
+                            <i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
+                            <a href="/contact">Contact Us</a></li>
+                        <li id="FAQ">
+                            <i class="fa fa-question-circle-o fa-2x fa-fw" aria-hidden="true"></i>
+                            <a  href="/faq">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>   
+           <!-- <nav>
+                <ul>
+                    {{#if user}}
+                    <li><a href="/users/welcome">Welcome</a></li>
+                    <li><a href="/notices/announcement">Announcements</a></li>
+                    <li><a href="/requests/servicerequest">Service Request</a></li>
+                    <li><a href="/users/notification">Notifications</a></li>
+                    <li><a href="/profiles/profile">Profile</a></li>
+                    <li><a href="/users/logout">Logout</a></li>
+                    {{else}}
+                    <li><a href="/users/register">Register</a></li>
+                    <p><i>Address: 4500 North Green Lake, Chicago, IL 98115</i></p>
+                    <p>Phone: (206) 729-7600</p>
+                    {{/if}}
+                </ul>
+            </nav>  -->
+        </div>
+    
+        <div class="col-8 main">
+            <section>
+                <ul>   
+                    {{#if success_msg}}
+                    <div>{{success_msg}}</div>
+                    {{/if}} 
+                    {{#if error_msg}}
+                      <div>{{error_msg}}</div>
+                    {{/if}}
+                    {{#if error}}
+                      <div>{{error}}</div>
+                    {{/if}}
+
+                    {{{body}}}
+                </ul>  
+            </section>
+        </div>
+       </div>
+    </main>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+</body>
+<footer> 
+    <div class="row">
+
+        <div class="col-12">
+            © Group F Project for COMP 424 DEV Week
+        </div>
+    </div>
+</footer>
+</html>

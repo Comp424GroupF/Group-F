@@ -1,0 +1,21 @@
+<p class="username">Hello {{username}}</p>
+<head>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<h1 class="cheaders">Add New Announcement</h1>
+<form class="form" action="/notices/addNotice" method="post">
+    <ul>
+    <label for="Subject">Subject</label>
+    <li>
+        <input type="text" name="subject" class="field-style field-split" placeholder="Subject" required/>
+    </li>
+    <label for="details">Announcement details</label>
+    <li>
+        <textarea name="details" class="field-style" placeholder="details" rows="30"></textarea>
+    </li>
+    <li>
+        <input type="submit" value="Submit" />
+    </li>
+    </ul>
+</form>
+<a href="/notices/announcement">Back</a>

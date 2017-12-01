@@ -1,0 +1,41 @@
+<head>
+    <link rel="stylesheet" href="/css/Website.css">
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<main class="login">
+    <div class="login">
+        <h1>Login to your account</h1>
+        <form method="post" action="/users/login" class="form">
+          <ul>
+            <li>
+               <input type="text" name="username" class="field-style field-split" value="" placeholder="username">
+            </li>
+            <li>
+                <input type="password" name="password" class="field-style field-split" value="" placeholder="Password">
+            </li>
+             <p class="remember_me">
+             <input type="checkbox" name="admin" id="admin" class="field-style field-split" onClick="addbox();">
+             Administrator
+            <li> 
+             <input type="text" name="adminCode" id="adminCode" class="field-style field-split" value="" placeholder="adminCode">
+            </li>
+            <li>
+              <input type="submit" name="commit" value="Login">
+            </li>
+        </form>
+    </div>
+                    
+    <div class="login-help">
+        <p>Forgot your password? <a href="/reset">Click here to reset it</a>.</p>
+    </div>
+                     
+</main>
+<script>
+function addbox() {
+    if (document.getElementById('admin').checked) {
+        document.getElementById('adminCode').style.display = 'block';
+    } else {
+        document.getElementById('adminCode').style.display = 'none';
+    }
+}
+</script>
