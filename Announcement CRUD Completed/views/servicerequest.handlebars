@@ -1,0 +1,19 @@
+<p class="username">Hello {{username}}</p>
+<form class="register">
+  <label for="ServiceType">Service Type:</label>
+                    
+  <select name="ServiceType" id="ServiceType" title="ServiceType" required>
+      <option value="0" selected disabled>Chose one</option>
+      <option value="Gym">Gym</option>
+      <option value="Maintenance">Maintenance</option>
+      <option value="Cleaning">Cleaning</option>
+      <option value="Postal">Postal delivery</option>
+  </select>
+      <br>
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" cols="30" rows="10" required placeholder="Please provide a detailed description of the problem."></textarea>
+      <br>
+      <input type="submit" value="Submit" />
+</form>
+<a href="/requests/updateRequest">Update Request</a>
+<a href="/requests/deleteRequest">Delete Request</a>
