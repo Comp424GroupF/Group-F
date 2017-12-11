@@ -1,0 +1,1 @@
+Local instance of mongodb database for the application developed.
