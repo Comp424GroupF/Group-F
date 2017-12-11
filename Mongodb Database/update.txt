@@ -1,1 +1,1 @@
-Local instance of mongodb database for the application developed.
+Local instance of mongodb database for the application developed. Please extract the RAR file to use it.
