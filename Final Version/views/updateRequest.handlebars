@@ -1,0 +1,57 @@
+<p class="username">Hello {{username}}</p>
+<head>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<h1 class="cheaders">Update Service Request</h1>
+    <form class="form" action="/requests/updateRequest" method="post">
+        <ul>
+        Servicetype:
+        <li>
+            <input type="text" name="servicetype" class="field-style field-split" id="servicetype" placeholder="Servicetype"/>
+        </li>
+        Message:
+        <li>
+            <textarea name="message" class="field-style" placeholder="details" id="message" rows="30"></textarea>
+        </li>
+        Status:
+        <li>
+            <input type="text" name="status" class="field-style field-split" id="status" placeholder="Status/Remark"/>
+        </li>
+        <input type="hidden" name="id" class="field-style field-split" id="id" placeholder="Id"/>
+        <input type="hidden" name="date" class="field-style field-split" id="date" placeholder="date"/>
+        <li>
+            <input type="submit" value="Update"/>
+        </li>
+        </ul>
+        </form>
+
+        <form method="post" action="/requests/getdata">
+            <input type="text" name="aptno" placeholder="Aptno"/>
+            <input type="submit" value="Search">
+        </form>
+    <section class="content">
+        <table class="table">
+            <tr>
+                <th></th>
+                <th>Aptno</th>
+                <th>Servicetype</th>
+                <th>Message</th>
+                <th>Status</th>
+                <th>Date</th>
+                <th>Id</th>
+            </tr>
+        {{# each requests }}
+            <tr>
+                <td><button class="get-req-data">Select</button></td>
+                <td><div>{{ this.aptno }}</div></td>
+                <td><div>{{ this.servicetype }}</div></td>
+                <td><div>{{ this.message }}</div></td>
+                <td><div>{{ this.status }}</div></td>
+                <td><div>{{ this.date }}</div></td>
+                <td><div>{{this.id}}</div></td>    
+        {{/each}}
+      </table>
+    </section>
+
+<a href="/requests/servicerequest" class="href">Back</a>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

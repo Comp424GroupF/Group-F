@@ -1,0 +1,27 @@
+<p class="username">Hello {{username}}</p>
+<p>Aptno: {{aptno}}</p>
+<head>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<h1 class="cheaders">Add New Announcement</h1>
+{{#if errors}}
+        {{#each errors}}
+            <div class="err"><p>{{msg}}</p></div>
+        {{/each}}
+{{/if}}
+<form class="form" action="/notices/addNotice" method="post">
+    <ul>
+    Subject:
+    <li>
+        <input type="text" name="subject" class="field-style field-split" placeholder="subject"/>
+    </li>
+    Announcement details:
+    <li>
+        <textarea name="details" class="field-style" placeholder="details" rows="30"></textarea>
+    </li>
+    <li>
+        <input type="submit" value="Add" />
+    </li>
+    </ul>
+</form>
+<a href="/notices/announcement" class="href">Back to Announcement</a>

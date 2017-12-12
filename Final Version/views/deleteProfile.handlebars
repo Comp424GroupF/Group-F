@@ -1,0 +1,43 @@
+<p class="username">Hello {{username}}</p>
+<head>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<h1 class="cheaders">Delete Profile</h1>
+    <form class="form" action="/profiles/deleteProfile" method="post">
+        <ul>
+            <input type="hidden" name="aptno" class="field-style field-split" id="aptno" placeholder="aptno"/>
+            <input type="hidden" name="name" class="field-style field-split" id="servicetype" placeholder="name"/>
+            <input type="hidden" name="email" class="field-style field-split" id="email" placeholder="email"/>
+           <li> 
+            <input type="text" name="id" class="field-style field-split" id="id" placeholder="Id" readonly/>
+           </li>
+           <input type="hidden" name="date" class="field-style field-split" id="date" placeholder="date"/>
+           <li>
+              <input type="submit" value="Delete"/>
+           </li>
+        </ul>
+    </form>
+    <section class="content">
+        <table class="table">
+             <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Aptno</th>
+                <th>Apttype</th>
+                <th>Email</th>
+                <th>Date</th>
+                <th>Id</th>
+            </tr>
+            <tr>
+                <td><button class="get-profile-data">Select</button></td>
+                <td><div>{{ profiles.name }}</div></td>
+                <td><div>{{ profiles.aptno }}</div></td>
+                <td><div>{{ profiles.apttype }}</div></td>
+                <td><div>{{ profiles.email }}</div></td>
+                <td><div>{{ profiles.date }}</div></td>
+                <td><div>{{profiles.id}}</div></td>
+            </tr>
+      </table>
+    </section>
+     <a href="/profiles/profile" class="href">Back to Profile</a>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

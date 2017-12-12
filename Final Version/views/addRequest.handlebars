@@ -1,0 +1,27 @@
+<p class="username">Hello {{username}}</p>
+<p>Aptno: {{aptno}}</p>
+<head>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<h1 class="cheaders">Add New Service Request</h1>
+{{#if errors}}
+        {{#each errors}}
+            <div class="err"><p>{{msg}}</p></div>
+        {{/each}}
+{{/if}}
+<form class="form" action="/requests/addRequest" method="post">
+    <ul>
+    Servicetype:
+    <li>
+        <input type="text" name="servicetype" class="field-style field-split" placeholder="servicetype"/>
+    </li>
+    Message:
+    <li>
+        <textarea name="message" class="field-style" placeholder="message" rows="30"></textarea>
+    </li>
+    <li>
+        <input type="submit" value="Add" />
+    </li>
+    </ul>
+</form>
+<a href="/requests/servicerequest">Back to Service request</a>

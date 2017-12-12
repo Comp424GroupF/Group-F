@@ -1,0 +1,46 @@
+<p class="username">Hello {{username}}</p>
+<p>Aptno: {{aptno}}</p>
+<head>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<h1 class="cheaders">Update Announcement</h1>
+    <form class="form" action="/notices/updateNotice" method="post">
+        <ul>
+        Subject:
+        <li>
+            <input type="text" name="subject" class="field-style field-split" id="subject" placeholder="subject"/>
+        </li>
+        Announcement details:
+        <li>
+            <textarea name="details" class="field-style" placeholder="details" id="details" rows="30"></textarea>
+        </li>
+        <input type="hidden" name="id" class="field-style field-split" id="id" placeholder="Id"/>
+        <input type="hidden" name="date" class="field-style field-split" id="date" placeholder="date"/>
+        <li>
+            <input type="submit" value="Update"/>
+        </li>
+        </ul>
+        </form>
+    <section class="content">
+        <table class="table">
+            <tr>
+                <th></th>
+                <th>Subject</th>
+                <th>Details</th>
+                <th>Date</th>
+                <th>Id</th>
+            </tr>
+        {{# each notices }}
+            <tr>
+                <td><button class="get-data">Select</button></td>
+                <td><div>{{ this.subject }}</div></td>
+                <td><div>{{ this.details }}</div></td>
+                <td><div>{{ this.date }}</div></td>
+                <td><div>{{this.id}}</div></td>
+            </tr> 
+        {{/each}}
+      </table>
+    </section>
+
+<a href="/notices/announcement" class="href">Back</a>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

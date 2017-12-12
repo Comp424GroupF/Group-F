@@ -1,0 +1,56 @@
+<p class="username">Hello {{username}}</p>
+<head>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<h1 class="cheaders">Update Profile</h1>
+    <form class="form" action="/profiles/updateProfile" method="post">
+        <ul>
+        Name:
+        <li>
+            <input type="text" name="name" class="field-style field-split" id="name" placeholder="name"/>
+        </li>
+        Aptno:
+        <li>
+            <input type="text" name="aptno" class="field-style field-split" id="aptno" placeholder="Aptno"/>
+        </li>
+        Email:
+        <li>
+            <input type="text" name="email" class="field-style field-split" id="email" placeholder="email"/>
+        </li>
+        Apttype:
+        <li>
+            <input type="text" name="apttype" class="field-style field-split" id="apttype" placeholder="apttype"/>
+        </li>
+        <input type="hidden" name="id" class="field-style field-split" id="id" placeholder="Id"/>
+        <input type="hidden" name="date" class="field-style field-split" id="date" placeholder="date"/>
+        <li>
+            <input type="submit" value="Update"/>
+        </li>
+        </ul>
+    </form>
+    
+    <section class="content">
+        <table class="table">
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Aptno</th>
+                <th>Apttype</th>
+                <th>Email</th>
+                <th>Date</th>
+                <th>Id</th>
+            </tr>
+            <tr>
+                <td><button class="get-profile-data">Select</button></td>
+                <td><div>{{ profiles.name }}</div></td>
+                <td><div>{{ profiles.aptno }}</div></td>
+                <td><div>{{ profiles.apttype }}</div></td>
+                <td><div>{{ profiles.email }}</div></td>
+                <td><div>{{ profiles.date }}</div></td>
+                <td><div>{{profiles.id}}</div></td>
+            </tr>    
+      </table>
+    </section>
+
+<a href="/profiles/profile" class="href">Back</a>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

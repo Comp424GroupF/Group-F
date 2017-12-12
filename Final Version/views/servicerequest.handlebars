@@ -1,0 +1,18 @@
+<p class="username">Hello {{username}}</p>
+<p>Aptno: {{aptno}}</p>
+<h1 class="cheaders"> Service Request </h1>
+<p>{{error}}</p>
+<section class="content">
+    {{# each requests }}
+            <article class="notes">
+                <div>Aptno: {{ this.aptno }}</div>
+                <div>Servicetype: {{ this.servicetype }}</div>
+                <div>Message: {{ this.message }}</div>
+                <div>Date: {{ this.date }}</div>
+                <div>Id: {{this.id}}</div>
+            </article>
+    {{/each}}
+</section>
+<a href="/requests/addRequest" class="href">Add Request</a>
+<a href="/requests/updateRequest" class="href">Update Request</a>
+<a href="/requests/deleteRequest" class="href">Delete Request</a>

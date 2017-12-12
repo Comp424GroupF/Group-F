@@ -1,0 +1,16 @@
+<p class="username">Hello {{username}}</p>
+<p>Aptno: {{aptno}}</p>
+<h1 class="cheaders"> Announcements </h1>
+<section class="content">
+    {{# each notices }}
+            <article class="notes">
+                <div>Subject: {{ this.subject }}</div>
+                <div>Details: {{ this.details }}</div>
+                <div>Date: {{ this.date }}</div>
+            </article>
+    {{/each}}
+</section>
+  <a href="/notices/addNotice" class="href">Add Announcement</a>
+  <a href="/notices/updateNotice" class="href">Update Announcement</a>
+  <a href="/notices/deleteNotice" class="href">Delete Announcement</a>
+
